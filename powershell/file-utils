@@ -1,0 +1,3 @@
+# Replace space with period in directory/file name 
+# e.g: New Folder/New Text.txt => New.Folder/New.text.txt
+Dir | Rename-Item -NewName { $_.Name -replace " ","." }
